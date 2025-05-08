@@ -8,12 +8,12 @@ import compression from 'vite-plugin-compression'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/trendboard/',
+  base: '/trendboard',
   plugins: [
     react(),
     tailwindcss(),
     visualizer({
-      open: true, // Automatically open the report in the browser
+      open: false, // Automatically open the report in the browser
       filename: 'bundle-analysis.html', // Output file for the report
     }),
     compression(), // Enable gzip compression
